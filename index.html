@@ -1055,4 +1055,18 @@ function setLang(lang) {
 
 /* ── Nav highlight ───────────────────────────────── */
 (function() {
-  const sections = document.querySelecto
+  rSelectorAll('section[id]');
+  const links = document.querySelectorAll('.nav-links a');
+  const io2 = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        links.forEach(a => a.classList.toggle('active',
+          a.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { rootMargin: '-40% 0px -60% 0px' });
+  sections.forEach(s => io2.observe(s));
+})();
+</script>
+</body>
+</html>

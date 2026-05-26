@@ -680,7 +680,7 @@
             <li data-pt="Frontend com <strong>Angular</strong> e backend com <strong>Spring Boot</strong>." data-en="Frontend with <strong>Angular</strong> and backend with <strong>Spring Boot</strong>.">Frontend com <strong>Angular</strong> e backend com <strong>Spring Boot</strong>.</li>
             <li data-pt="Arquitetura em <strong>microsserviços</strong> integrada via APIs REST com PostgreSQL." data-en="<strong>Microservices</strong> architecture integrated via REST APIs with PostgreSQL.">Arquitetura em <strong>microsserviços</strong> integrada via APIs REST com PostgreSQL.</li>
             <li data-pt="Criação e manutenção de pipelines CI/CD no <strong>GitLab</strong> para build, testes e deploy automatizados." data-en="Creation and maintenance of CI/CD pipelines in <strong>GitLab</strong> for automated build, test, and deploy.">Criação e manutenção de pipelines CI/CD no <strong>GitLab</strong> para build, testes e deploy automatizados.</li>
-            <li data-pt="Projeto em produção — <strong>Acesso Fácil</strong>: plataforma web voltada ao atendimento ao cidadão." data-en="Production project — <strong>Acesso Fácil</strong>: a web platform for citizen services (Angular + Spring Boot + PostgreSQL).">Projeto em produção — <strong>Acesso Fácil</strong>: plataforma web voltada ao atendimento ao cidadão.</li>
+            <li data-pt="Projeto em produção — <strong><a href='https://acessofacil.jfrn.jus.br/peticao-cadastro' target='_blank' style='color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)'>Acesso Fácil</a></strong>: plataforma web voltada ao atendimento ao cidadão." data-en="Production project — <strong><a href='https://acessofacil.jfrn.jus.br/peticao-cadastro' target='_blank' style='color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)'>Acesso Fácil</a></strong>: a web platform for citizen services (Angular + Spring Boot + PostgreSQL).">Projeto em produção — <strong><a href="https://acessofacil.jfrn.jus.br/peticao-cadastro" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">Acesso Fácil</a></strong>: plataforma web voltada ao atendimento ao cidadão.</li>
           </ul>
         </div>
       </div>
@@ -1055,14 +1055,4 @@ function setLang(lang) {
 
 /* ── Nav highlight ───────────────────────────────── */
 (function() {
-  const sections = document.querySelectorAll('section[id]');
-  const links = document.querySelectorAll('.nav-links a');
-  window.addEventListener('scroll', () => {
-    let cur='';
-    sections.forEach(s => { if(window.scrollY>=s.offsetTop-120) cur=s.id; });
-    links.forEach(a => { a.style.color = a.getAttribute('href')==='#'+cur ? 'var(--accent)' : ''; });
-  }, {passive:true});
-})();
-
-/* ── Counters ────────────────────────────────────── */
-(function() 
+  const sections = document.querySelecto

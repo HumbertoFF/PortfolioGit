@@ -1,255 +1,1058 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <title>Portfólio - Humberto Freitas</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="styles/styleQuiz.css" />
-    <link rel="stylesheet" type="text/css" href="styles/styleTarefas.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-    <script
-      src="https://kit.fontawesome.com/10728e2d4f.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/tarefas.js" defer></script>
-    <script src="js/menuHamburguer.js" defer></script>
-    <script src="js/quiz.js" defer></script>
-  </head>
-  <body>
-    <header class="p-3 text-bg-dark o-header ">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <strong id="nome">Humberto Freitas</strong></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Alterna navegação"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse  animation "
-          id="navbarNavAltMarkup"
-          role="navigation"
-        >
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#inicio">Início
-                <span class="sr-only">(Página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#trabalhos">Trabalhos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projetos">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-          </div>
-      </nav>
-    </header>
-    <main class="o-main">
-      <div class="container">
-        <section id="inicio">
-          <h1>Sobre</h1>
-          <div class="inicio row"  >
-            <div id='textoPessoal' class="col-lg-8 col-12">
-              <p>
-                Olá sou Humberto 👋! Tenho 35 anos, sou desenvolvedor web com mais de 4 anos de experiência, pós-graduado em Tecnologia de Informação na área de desenvolvimento Web pelo IMD/UFRN. 
-                Atuo como Dev freelancer e sou analista desenvolvedor na ESIG Software.
-              </p>
-              <p>
-                Tenho experiência em arquitetura de aplicações web utilizando Spring Boot (Java) no back-end e Angular no front-end. 
-                Atuo com integração entre sistemas, consumo e exposição de APIs REST, Docker, PostgreSQL e JPA/Hibernate, com foco em desempenho e manutenibilidade. 
-                Prezo por uma estrutura de código limpa, organização de projetos eficiente e boas práticas de desenvolvimento, aplicando conceitos de injeção de dependência, DTOs e configuração de containers.             
-              </p> 
-              <p>
-                Sou um profissional colaborativo, analítico e focado em resultados, com facilidade para resolver problemas complexos e comunicar ideias de forma clara. 
-                Valorizo o trabalho em equipe, a aprendizagem contínua e a busca por soluções eficientes que realmente agreguem valor ao negócio.
-              </p>
-              </div>
-            <div class="col-lg-4 col-12">
-                <img class="fotoPessoal" src="assets/media/pp.jpg" >
-            </div>
-          </div>  
-         
-        </section>
-        <section id="trabalhos">
-            <div>
-              <h1>Trabalhos em produção </h4>
-            </div>
-            <ul class="slider-container">
-                <li>
-                  <h3>ACESSO FÁCIL</h2>
-                  <img src="./assets/media/acessoFacil.png"
-                    style="width: 100%;">
-                  <p>Acesso Fácil - O Acesso Fácil é uma ferramenta web que visa facilitar o acesso do cidadão, de forma remota, à justiça, com o ajuizamento da ação, sem a necessidad e de advogado ou defensor público.</p>
-                  <p>Produto foi desenvolvido na Residência de TI IMD/UFRN em parceria com a Justiça Federal do Rio Grande do Norte, 
-                    com aplicação na área da Justiça, realizando uma petição(Documento de abertura de um processo) automaticamente em formato pdf, 
-                    através do preenchimento de formulários. Trabalhei diretamente criação do Front-end utilizando o framework Angular, 
-                    também fiz a refatoração de classes nos microsserviços do Back-end em Java com Springboot. Você pode conferir o site nesse link <a class="btn" href="https://acessofacil.jfrn.jus.br/peticao-cadastro">Acesso Fácil</a></p></li>
-            </ul>
-            <ul class="slider-container">
-              <li>
-                <h3>MCR RECEPTIVO</h2>
-                <img src="./assets/media/mcrtela.jpg"
-                  style="width: 100%;">
-                <p>Projeto para gerenciamento para empresa de receptivos na área de turismo.(Em andamento)</p>
-                <p>Desenvolvido com Angular e Spring Boot com banco de dados PostgreSQL, está em fase de desenvolvimento mas em breve será lançado em produção.
-                  Tanto o front-end e back-end foram desenvolvidos por mim.
-                </p></li>
-          </ul>
-          <ul class="slider-container">
-              <li>
-                <h3>BECHECK: DESENVOLVIMENTO DE TECNOLOGIA PARA
-APOIAR ASSISTÊNCIA EM PERINATOLOGIA</h2>
-                <img src="./assets/media/Tela perfil da Paciente - CheckList 1.png"
-                  style="width: 100%;">
-                <p> Sistema de acompanhamento e planejamento de pré-natal: acompanhamento da evolução
-da gestante desde as primeiras semanas até o parto, contemplando todas as checklists exigidas pelo Ministério da Saúde.
-                </p>
-                <p>Registrado no INPI  Número do Registro: BR512024000325-8</p>
-                <p>Altos índices de mortalidade materna e neonatal estão associados às complicações no momento do parto e no puerpério, como
-também com qualidade ruim da assistência pré-natal, propiciando o desenvolvimento de complicações que geram riscos à
-segurança do binômio mãe-feto. Assim, o uso de novas tecnologias na área da saúde, pode complementar o cuidado em
-perinatologia e promover redução da morbidade e mortalidade entre gestantes e conceptos. O objetivo deste artigo é descrever o
-processo de criação de uma aplicação web voltada para assistência perinatal que valorize a usabilidade e efetividade no
-atendimento. O projeto foi concebido pelas prioridades observadas nas pesquisas bibliográficas e observações realizadas no
-ambulatório de uma maternidade escola localizada em Natal-RN, Brasil. O desenvolvimento utilizou a metodologia Design Science
-Research (DSR) criando e validando uma nova tecnologia voltada para o atendimento da paciente gestante durante as fases do
-pré-natal, parto e pós-parto imediato. A tecnologia desenvolvida foi registrada junto ao Instituto Nacional de Propriedade
-Privada(INPI), sendo necessário estudo de usabilidade com gestantes e profissionais de saúde antes da sua implementação com o
-objetivo de apoiar a assistência em perinatologia.
-                </p>
-              <a
-              href="https://interfaces.unileao.edu.br/index.php/revista-interfaces/article/view/1735"
-              title="Revista Interfaces: Saúde, Humanas e Tecnologia. v.12, p.4231/3 - 4231, 2024."
-              alt="Publicação em revista ciêntífica na área da saúde"
-              aria-label="Publicação em revista ciêntífica na área da saúde"
-            >
-          </ul>
-        </section>
-        <section id="projetos">
-          <h1>Projetos</h2>
-          <div>
-            <p>Você pode acomanhar alguns projetos e atividades no meu github
-              <a
-              href="https://github.com/HumbertoFF"
-              title="Acessar o Github de Humberto"
-              alt="Acessar o Github de Humberto"
-              aria-label="Acessar o LinkedIn de Humberto"
-            >
-              <i class="fa-brands fa-github fa-2x icones"></i
-            ></a></p>
-          </div>
-          <div class="container">
+<html lang="pt-BR" data-lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humberto Freitas | Full Stack Developer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:      #0a0e1a;
+      --bg2:     #0f1528;
+      --glass:   rgba(255,255,255,0.04);
+      --border:  rgba(255,255,255,0.08);
+      --primary: #4f8ef7;
+      --accent:  #00d4aa;
+      --purple:  #a78bfa;
+      --text:    #e2e8f0;
+      --muted:   #8892a4;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg); color: var(--text);
+      line-height: 1.6; overflow-x: hidden;
+    }
+    #bg-canvas { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
 
-            <h3>Salve suas tarefas e faça um check-list</h2>
-            <div id="salvaTarefas" class="row">
-              <div class="col-xl">
-                <form action="" class="row" id="add-task-form">
-                  <input
-                    class="col"
-                    type="text"
-                    id="task-title"
-                    placeholder="Qual é a sua tarefa?"
-                  />
-                  <button class="col-1" id="add-btn" type="submit">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
-                </form>
-              </div>
-              <div class="col-xl" id="tasks-list-container"> 
-                <div class="container template hide mb-1">
-                  <div id="task-list" class="row">
-                    <span id="add-task" class="col-10" readonly ></span>
-                    <a class="col-1 done-btn">
-                      <i class="fa-solid fa-check fa-xl"></i
-                    ></a>
-                    <a class="col-1 reverse-btn hide">
-                      <i class="fa-solid fa-rotate-right fa-xl"></i
-                    ></a>
-                    <a class="col-1 remove-btn">
-                      <i class="fa-solid fa-xmark fa-xl"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    /* ── Nav ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2rem;
+      background: rgba(10,14,26,0.88); backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-weight: 700; font-size: 1.1rem; letter-spacing: 1px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none; font-size: .88rem;
+      letter-spacing: .4px; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── Lang Toggle ── */
+    .lang-toggle {
+      display: flex; align-items: center; gap: 0;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--border); border-radius: 999px;
+      overflow: hidden; cursor: pointer; flex-shrink: 0;
+    }
+    .lang-btn {
+      padding: .3rem .75rem; font-size: .75rem; font-weight: 700;
+      letter-spacing: .8px; color: var(--muted);
+      background: transparent; border: none; cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+    .lang-btn.active {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff; border-radius: 999px;
+    }
+
+    /* ── Sections ── */
+    section { position: relative; z-index: 1; }
+
+    /* ── Hero ── */
+    #hero {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 7rem 1.5rem 4rem;
+    }
+    .hero-avatar {
+      width: 130px; height: 130px; border-radius: 50%;
+      border: 3px solid transparent;
+      background: linear-gradient(var(--bg), var(--bg)) padding-box,
+                  linear-gradient(135deg, var(--primary), var(--accent), var(--purple)) border-box;
+      object-fit: cover; margin-bottom: 1.8rem;
+      box-shadow: 0 0 40px rgba(79,142,247,.3);
+      animation: fadeDown .5s ease both;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: rgba(79,142,247,.12); border: 1px solid rgba(79,142,247,.3);
+      color: var(--primary); padding: .45rem 1.2rem;
+      border-radius: 999px; font-size: .82rem; font-weight: 600;
+      letter-spacing: .5px; width: max-content; max-width: 100%;
+      margin: 0 auto 1.5rem auto;
+      animation: fadeDown .6s .05s ease both;
+    }
+    .hero-badge .badge-dot {
+      display: inline-block; width: 8px; height: 8px; flex-shrink: 0;
+      border-radius: 50%; background: var(--accent); animation: pulse 1.5s infinite;
+    }
+    .hero-name {
+      font-size: clamp(2.8rem, 7vw, 5.2rem); font-weight: 800;
+      letter-spacing: -2px; line-height: 1.05;
+      animation: fadeDown .7s .1s ease both;
+    }
+    .hero-name span {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 50%, var(--purple) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-title {
+      margin-top: .9rem; font-size: clamp(1rem, 2.5vw, 1.35rem);
+      color: var(--muted); font-weight: 400;
+      animation: fadeDown .7s .2s ease both;
+    }
+    .hero-title strong { color: var(--text); font-weight: 600; }
+    .hero-meta { margin-top: .8rem; font-size: .9rem; color: var(--muted); animation: fadeDown .7s .3s ease both; }
+    .hero-cta {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      justify-content: center; margin-top: 2.2rem;
+      animation: fadeDown .7s .4s ease both;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .75rem 1.8rem; border-radius: 8px;
+      font-size: .95rem; font-weight: 600; text-decoration: none;
+      transition: transform .2s, box-shadow .2s; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff; box-shadow: 0 4px 20px rgba(79,142,247,.3);
+    }
+    .btn-primary:hover { box-shadow: 0 8px 30px rgba(79,142,247,.45); }
+    .btn-outline {
+      border: 1px solid var(--border); color: var(--text);
+      background: var(--glass); backdrop-filter: blur(8px);
+    }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .hero-contacts {
+      display: flex; flex-wrap: wrap; gap: 1rem;
+      justify-content: center; margin-top: 2rem;
+      animation: fadeDown .7s .5s ease both;
+    }
+    .contact-chip {
+      display: inline-flex; align-items: center; gap: .4rem;
+      color: var(--muted); font-size: .83rem; text-decoration: none;
+      padding: .3rem .85rem; border-radius: 999px;
+      border: 1px solid var(--border); background: var(--glass);
+      transition: color .2s, border-color .2s;
+    }
+    .contact-chip:hover { color: var(--accent); border-color: var(--accent); }
+    .hero-scroll {
+      position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: .4rem;
+      color: var(--muted); font-size: .72rem; letter-spacing: 1px;
+      animation: fadeIn 1s 1s both;
+    }
+    .scroll-line {
+      width: 1px; height: 46px;
+      background: linear-gradient(to bottom, var(--primary), transparent);
+      animation: scrollDrop 1.5s ease-in-out infinite;
+    }
+
+    /* ── Stats ── */
+    .stats-row {
+      display: flex; flex-wrap: wrap; gap: 1.4rem;
+      justify-content: center; padding: 2rem 1.5rem 4rem; position: relative; z-index:1;
+    }
+    .stat-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.5rem 2rem; text-align: center;
+      backdrop-filter: blur(12px); flex: 1; min-width: 130px; max-width: 190px;
+      transition: transform .25s, border-color .25s;
+    }
+    .stat-card:hover { transform: translateY(-4px); border-color: var(--primary); }
+    .stat-num {
+      font-size: 2.1rem; font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .stat-label { font-size: .78rem; color: var(--muted); margin-top: .3rem; }
+
+    /* ── Section Wrapper ── */
+    .section-wrap { max-width: 1100px; margin: 0 auto; padding: 5rem 1.5rem; }
+    .section-head { margin-bottom: 3rem; }
+    .section-tag {
+      display: inline-block; font-size: .73rem; font-weight: 700;
+      letter-spacing: 2px; color: var(--accent); text-transform: uppercase; margin-bottom: .6rem;
+    }
+    .section-title { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; letter-spacing: -1px; }
+    .section-line {
+      width: 48px; height: 3px; border-radius: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--accent)); margin-top: .8rem;
+    }
+
+    /* ── About ── */
+    #about .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .about-text p { color: var(--muted); font-size: 1.03rem; line-height: 1.8; margin-bottom: 1rem; }
+    .about-text p strong { color: var(--text); }
+    .about-highlights { display: flex; flex-direction: column; gap: 1rem; }
+    .highlight-card {
+      display: flex; align-items: flex-start; gap: 1rem;
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 12px; padding: 1.2rem 1.4rem; backdrop-filter: blur(10px);
+      transition: border-color .25s, transform .25s;
+    }
+    .highlight-card:hover { border-color: var(--primary); transform: translateX(4px); }
+    .highlight-icon {
+      width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem;
+    }
+    .highlight-icon.blue   { background: rgba(79,142,247,.15); }
+    .highlight-icon.green  { background: rgba(0,212,170,.15); }
+    .highlight-icon.purple { background: rgba(167,139,250,.15); }
+    .highlight-info strong { display: block; font-size: .93rem; margin-bottom: .2rem; }
+    .highlight-info span   { font-size: .83rem; color: var(--muted); }
+
+    /* ── Skills ── */
+    #skills { background: var(--bg2); }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .skill-group {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.6rem; backdrop-filter: blur(10px);
+      transition: border-color .25s, transform .25s;
+    }
+    .skill-group:hover { border-color: var(--accent); transform: translateY(-4px); }
+    .skill-group-title {
+      display: flex; align-items: center; gap: .5rem;
+      font-size: .72rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 1.2rem; white-space: nowrap; flex-wrap: nowrap;
+    }
+    .skill-group-title .dot { width: 6px; height: 6px; flex-shrink: 0; border-radius: 50%; background: var(--accent); }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .skill-tag {
+      padding: .33rem .78rem; border-radius: 6px; font-size: .78rem; font-weight: 500;
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); color: var(--text);
+      transition: background .2s, border-color .2s, color .2s;
+    }
+    .skill-tag:hover { background: rgba(79,142,247,.15); border-color: var(--primary); color: var(--primary); }
+
+    /* ── Experience ── */
+    .timeline { position: relative; padding-left: 2.5rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: linear-gradient(to bottom, var(--primary), var(--accent), transparent);
+      border-radius: 2px;
+    }
+    .tl-item { position: relative; margin-bottom: 3.5rem; }
+    .tl-dot {
+      position: absolute; left: -2.9rem; top: .2rem;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: var(--primary); border: 3px solid var(--bg);
+      box-shadow: 0 0 0 3px rgba(79,142,247,.3);
+    }
+    .tl-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.8rem 2rem; backdrop-filter: blur(10px);
+      transition: border-color .25s, transform .25s;
+    }
+    .tl-card:hover { border-color: var(--primary); transform: translateX(6px); }
+    .tl-header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; }
+    .tl-company { font-size: 1.03rem; font-weight: 700; }
+    .tl-period {
+      font-size: .78rem; color: var(--muted); background: rgba(255,255,255,.05);
+      border: 1px solid var(--border); padding: .2rem .7rem; border-radius: 999px;
+      white-space: nowrap; align-self: flex-start;
+    }
+    .tl-role { margin-top: .4rem; font-size: .83rem; font-weight: 600; color: var(--accent); }
+    .tl-location { font-size: .78rem; color: var(--muted); margin-bottom: 1rem; margin-top: .1rem; }
+    .tl-bullets { list-style: none; display: flex; flex-direction: column; gap: .7rem; }
+    .tl-bullets li {
+      position: relative; padding-left: 1.2rem;
+      font-size: .88rem; color: var(--muted); line-height: 1.6;
+    }
+    .tl-bullets li::before {
+      content: '▸'; color: var(--primary);
+      position: absolute; left: 0; top: .05rem;
+    }
+    .tl-bullets li strong { color: var(--text); }
+    .tl-badge {
+      display: inline-block; margin-top: 1rem; font-size: .73rem; font-weight: 600;
+      padding: .23rem .7rem; border-radius: 999px;
+      background: rgba(0,212,170,.1); border: 1px solid rgba(0,212,170,.3); color: var(--accent);
+    }
+
+    /* ── Education ── */
+    #education { background: var(--bg2); }
+    .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .edu-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.8rem; backdrop-filter: blur(10px);
+      position: relative; overflow: hidden; transition: border-color .25s, transform .25s;
+    }
+    .edu-card:hover { border-color: var(--purple); transform: translateY(-4px); }
+    .edu-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--purple));
+    }
+    .edu-degree { font-size: 1rem; font-weight: 700; margin-bottom: .3rem; }
+    .edu-school  { font-size: .88rem; color: var(--accent); margin-bottom: .3rem; }
+    .edu-period  { font-size: .78rem; color: var(--muted); }
+
+    /* ── Certifications ── */
+    .cert-grid { display: flex; flex-wrap: wrap; gap: .75rem; }
+    .cert-chip {
+      display: flex; align-items: center; gap: .5rem;
+      padding: .5rem 1rem; border-radius: 10px;
+      background: var(--glass); border: 1px solid var(--border);
+      font-size: .83rem; color: var(--text); backdrop-filter: blur(8px);
+      transition: border-color .2s, color .2s, transform .2s;
+    }
+    .cert-chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .cert-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+
+    /* ── INPI Certificate ── */
+    #inpi { background: var(--bg2); }
+    .inpi-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .inpi-info { display: flex; flex-direction: column; gap: 1rem; }
+    .inpi-badge-row {
+      display: inline-flex; align-items: center; gap: .7rem;
+      background: rgba(167,139,250,.1); border: 1px solid rgba(167,139,250,.3);
+      padding: .5rem 1.2rem; border-radius: 999px; width: fit-content;
+    }
+    .inpi-badge-row span { font-size: .8rem; font-weight: 700; color: var(--purple); letter-spacing: .5px; }
+    .inpi-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.6rem; backdrop-filter: blur(10px);
+    }
+    .inpi-field { margin-bottom: .9rem; }
+    .inpi-field:last-child { margin-bottom: 0; }
+    .inpi-label { font-size: .72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: .2rem; }
+    .inpi-value { font-size: .9rem; color: var(--text); line-height: 1.5; }
+    .inpi-value.accent { color: var(--accent); font-weight: 600; }
+    .inpi-img-wrap {
+      position: relative; border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 60px rgba(0,0,0,.4);
+    }
+    .inpi-img-wrap img { width: 100%; display: block; }
+    .inpi-img-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,14,26,.6) 0%, transparent 40%);
+      pointer-events: none;
+    }
+
+    /* ── Publication ── */
+    #publications { }
+    .pub-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem; backdrop-filter: blur(10px);
+      position: relative; overflow: hidden; transition: border-color .25s;
+    }
+    .pub-card:hover { border-color: var(--accent); }
+    .pub-card::before {
+      content: '"'; position: absolute; top: -1rem; right: 1.5rem;
+      font-size: 8rem; color: rgba(79,142,247,.07); font-family: Georgia, serif; line-height: 1;
+    }
+    .pub-title  { font-size: 1rem; font-weight: 700; margin-bottom: .8rem; line-height: 1.5; }
+    .pub-authors{ font-size: .83rem; color: var(--muted); margin-bottom: .8rem; line-height: 1.6; }
+    .pub-journal{ font-size: .83rem; margin-bottom: .5rem; }
+    .pub-journal strong { color: var(--accent); }
+    .pub-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+    .pub-tag {
+      font-size: .73rem; padding: .2rem .7rem; border-radius: 999px;
+      background: rgba(167,139,250,.1); border: 1px solid rgba(167,139,250,.2); color: var(--purple);
+    }
+
+    /* ── Built With ── */
+    #built-with { background: var(--bg2); }
+    .built-intro { color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 2.5rem; max-width: 700px; }
+    .built-intro strong { color: var(--text); }
+    .built-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .built-card {
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.6rem; backdrop-filter: blur(10px);
+      transition: border-color .25s, transform .25s; position: relative; overflow: hidden;
+    }
+    .built-card:hover { border-color: var(--primary); transform: translateY(-4px); }
+    .built-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+    }
+    .built-icon { font-size: 2rem; margin-bottom: .8rem; }
+    .built-name { font-size: 1rem; font-weight: 700; margin-bottom: .4rem; }
+    .built-desc { font-size: .83rem; color: var(--muted); line-height: 1.6; }
+    .pipeline-wrap { margin-top: 2.5rem; }
+    .pipeline-title { font-size: .83rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--accent); margin-bottom: 1.2rem; }
+    .pipeline {
+      display: flex; align-items: center; flex-wrap: wrap; gap: 0;
+      background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; overflow: hidden;
+    }
+    .pipe-step {
+      flex: 1; min-width: 120px; padding: 1.2rem 1rem; text-align: center;
+      position: relative;
+    }
+    .pipe-step:not(:last-child)::after {
+      content: '→'; position: absolute; right: -8px; top: 50%; transform: translateY(-50%);
+      color: var(--primary); font-size: 1.1rem; z-index: 2;
+    }
+    .pipe-step + .pipe-step { border-left: 1px solid var(--border); }
+    .pipe-emoji { font-size: 1.5rem; margin-bottom: .3rem; }
+    .pipe-label { font-size: .72rem; font-weight: 700; color: var(--text); letter-spacing: .5px; }
+    .pipe-sub   { font-size: .68rem; color: var(--muted); margin-top: .15rem; }
+
+    /* ── Languages ── */
+    .lang-grid { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+    .lang-card {
+      flex: 1; min-width: 200px; background: var(--glass); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.5rem 1.8rem; backdrop-filter: blur(10px);
+      transition: border-color .25s, transform .25s;
+    }
+    .lang-card:hover { border-color: var(--primary); transform: translateY(-4px); }
+    .lang-name  { font-size: 1.1rem; font-weight: 700; margin-bottom: .3rem; }
+    .lang-level { font-size: .83rem; color: var(--accent); font-weight: 600; margin-bottom: .5rem; }
+    .lang-desc  { font-size: .8rem; color: var(--muted); }
+    .lang-bar   { height: 4px; border-radius: 2px; background: rgba(255,255,255,.08); margin-top: .8rem; overflow: hidden; }
+    .lang-fill  { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--primary), var(--accent)); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--bg2); border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem; text-align: center; position: relative; z-index: 1;
+    }
+    .footer-name {
+      font-size: 1.5rem; font-weight: 800; letter-spacing: -1px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1.2rem; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: .83rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-copy { margin-top: 1.5rem; font-size: .78rem; color: var(--muted); }
+
+    /* ── Animations ── */
+    @keyframes fadeDown  { from { opacity:0; transform:translateY(-20px) } to { opacity:1; transform:translateY(0) } }
+    @keyframes fadeIn    { from { opacity:0 } to { opacity:1 } }
+    @keyframes fadeRight { from { opacity:0; transform:translateX(-20px) } to { opacity:1; transform:translateX(0) } }
+    @keyframes pulse     { 0%,100% { opacity:1; transform:scale(1) } 50% { opacity:.5; transform:scale(.8) } }
+    @keyframes scrollDrop { 0% { opacity:1; transform:scaleY(1); transform-origin:top } 100% { opacity:0; transform:scaleY(0); transform-origin:top } }
+    .js-ready .reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease, transform .6s ease; }
+    .js-ready .reveal.visible { opacity:1; transform:translateY(0); }
+
+    @media (max-width: 900px) {
+      #about .about-grid { grid-template-columns: 1fr; }
+      .inpi-wrap { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 1rem; }
+      .nav-links { gap: 1rem; }
+      .nav-links a { font-size: .78rem; }
+      .tl-header { flex-direction: column; }
+      .pipe-step:not(:last-child)::after { display: none; }
+    }
+    @media (max-width: 560px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+<canvas id="bg-canvas"></canvas>
+
+<!-- ── Nav ── -->
+<nav>
+  <div class="nav-logo">HF</div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#about"        data-pt="Sobre"      data-en="About">Sobre</a></li>
+      <li><a href="#skills"       data-pt="Stack"      data-en="Stack">Stack</a></li>
+      <li><a href="#experience"   data-pt="Experiência" data-en="Experience">Experiência</a></li>
+      <li><a href="#built-with"   data-pt="Projeto"    data-en="Project">Projeto</a></li>
+      <li><a href="#publications" data-pt="Pesquisa"   data-en="Research">Pesquisa</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn"        id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section id="hero">
+  <img class="hero-avatar" src="profile-photo.jpg" alt="Humberto Freitas" />
+
+  <div class="hero-badge">
+    <span class="badge-dot"></span>
+    <span data-pt="Disponível para remoto / híbrido" data-en="Available for remote / hybrid">Disponível para remoto / híbrido</span>
+  </div>
+
+  <h1 class="hero-name"><span>Humberto Freitas</span></h1>
+
+  <p class="hero-title">
+    <span data-pt="Desenvolvedor" data-en="Full Stack Developer">Desenvolvedor</span>
+    <strong> Full Stack Java</strong> &nbsp;·&nbsp;
+    <strong>Spring Boot</strong> &nbsp;·&nbsp;
+    <strong>Angular</strong>
+  </p>
+
+  <p class="hero-meta">
+    📍 Parnamirim, RN &nbsp;&nbsp;·&nbsp;&nbsp;
+    <span data-pt="4+ anos de experiência" data-en="4+ years of experience">4+ anos de experiência</span>
+  </p>
+
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="mailto:humbertofilho8@gmail.com">
+      ✉ <span data-pt="Entrar em contato" data-en="Get in touch">Entrar em contato</span>
+    </a>
+    <a class="btn btn-outline" href="#experience">
+      <span data-pt="Ver experiências" data-en="See experiences">Ver experiências</span>
+    </a>
+  </div>
+
+  <div class="hero-contacts">
+    <a class="contact-chip" href="mailto:humbertofilho8@gmail.com">📧 humbertofilho8@gmail.com</a>
+    <a class="contact-chip" href="tel:+5584991672742">📱 (84) 99167-2742</a>
+    <a class="contact-chip" href="https://www.linkedin.com/in/humberto-freitasfilho/" target="_blank">🔗 LinkedIn</a>
+    <a class="contact-chip" href="https://github.com/HumbertoFF" target="_blank">💻 GitHub</a>
+    <a class="contact-chip" href="#" target="_blank">🌐 <span data-pt="Portfólio" data-en="Portfolio">Portfólio</span></a>
+  </div>
+
+  <div class="hero-scroll">
+    <p>SCROLL</p><div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ── Stats ── -->
+<div class="stats-row">
+  <div class="stat-card reveal"><div class="stat-num">4+</div><div class="stat-label" data-pt="Anos de Experiência" data-en="Years of Experience">Anos de Experiência</div></div>
+  <div class="stat-card reveal"><div class="stat-num">100k</div><div class="stat-label" data-pt="Usuários Atendidos" data-en="Users Served">Usuários Atendidos</div></div>
+  <div class="stat-card reveal"><div class="stat-num">3</div><div class="stat-label" data-pt="Projetos em Produção" data-en="Production Projects">Projetos em Produção</div></div>
+  <div class="stat-card reveal"><div class="stat-num">1</div><div class="stat-label" data-pt="Publicação Científica" data-en="Scientific Publication">Publicação Científica</div></div>
+  <div class="stat-card reveal"><div class="stat-num">INPI</div><div class="stat-label" data-pt="Registro como Co-autor" data-en="Co-author Registration">Registro como Co-autor</div></div>
+</div>
+
+<!-- ── About ── -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Quem sou eu" data-en="Who I am">Quem sou eu</span>
+      <h2 class="section-title" data-pt="Sobre mim" data-en="About me">Sobre mim</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p data-pt="Desenvolvedor <strong>Full Stack</strong> com mais de 4 anos de experiência em sistemas corporativos e governamentais de grande escala."
+           data-en="<strong>Full Stack</strong> Developer with over 4 years of experience in large-scale corporate and government systems.">
+          Desenvolvedor <strong>Full Stack</strong> com mais de 4 anos de experiência em sistemas corporativos e governamentais de grande escala.
+        </p>
+        <p data-pt="Especializado em <strong>Java EE, Spring Boot e Angular</strong>, com histórico comprovado na construção, evolução e sustentação de aplicações críticas em produção atendendo entre <strong>50 mil e 100 mil usuários por instituição</strong>."
+           data-en="Specialized in <strong>Java EE, Spring Boot, and Angular</strong>, with a proven track record building, evolving, and maintaining critical production applications serving between <strong>50,000 and 100,000 users per institution</strong>.">
+          Especializado em <strong>Java EE, Spring Boot e Angular</strong>, com histórico comprovado na construção, evolução e sustentação de aplicações críticas em produção atendendo entre <strong>50 mil e 100 mil usuários por instituição</strong>.
+        </p>
+        <p data-pt="Experiência sólida com arquitetura em <strong>microsserviços</strong>, APIs REST, CI/CD e bancos de dados PostgreSQL. Perfil orientado a código limpo, performance e colaboração em times ágeis."
+           data-en="Solid experience with <strong>microservices</strong> architecture, REST APIs, CI/CD pipelines, and PostgreSQL databases. Clean code, performance, and agile team collaboration oriented.">
+          Experiência sólida com arquitetura em <strong>microsserviços</strong>, APIs REST, CI/CD e bancos de dados PostgreSQL. Perfil orientado a código limpo, performance e colaboração em times ágeis.
+        </p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card reveal">
+          <div class="highlight-icon blue">🏛️</div>
+          <div class="highlight-info">
+            <strong data-pt="Sistemas Governamentais" data-en="Government Systems">Sistemas Governamentais</strong>
+            <span data-pt="Desenvolvimento em universidades federais e Justiça Federal do RN" data-en="Development at federal universities and Federal Court of RN">Desenvolvimento em universidades federais e Justiça Federal do RN</span>
           </div>
-        </section>
-        <section id="sobre">
-          <h2>Sobre o site</h2>
-          <P>
-            Este site foi desenvolvido apenas com HTML5, CSS3 e Javascript criado no codesandbox.io, sem templates, apenas utilizando código feito do zero.</P>
-        </section>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon green">⚡</div>
+          <div class="highlight-info">
+            <strong data-pt="Alta Performance" data-en="High Performance">Alta Performance</strong>
+            <span data-pt="Tuning de queries PostgreSQL para sistemas de alta carga" data-en="PostgreSQL query tuning for high-load systems">Tuning de queries PostgreSQL para sistemas de alta carga</span>
+          </div>
+        </div>
+        <div class="highlight-card reveal">
+          <div class="highlight-icon purple">📜</div>
+          <div class="highlight-info">
+            <strong data-pt="Pesquisa Aplicada" data-en="Applied Research">Pesquisa Aplicada</strong>
+            <span data-pt="Co-autor em publicação científica indexada com registro INPI" data-en="Co-author in an indexed scientific publication with INPI registration">Co-autor em publicação científica indexada com registro INPI</span>
+          </div>
+        </div>
       </div>
-    
-      <a  href="#inicio" class="btn" title="Voltar ao início">
-        <i class= "btn fa-solid fa-circle-arrow-up fa-2xl" ></i>
-      </a>
-    </main>
-    <footer class="o-footer">
-      <div class="row iconesRodape">
-        <a
-          href="https://wa.me/5584991672742"
-          title="Acessar o WhatsApp de Humberto"
-          alt="Acessar o WhatsApp de Humberto"
-          aria-label="Acessar o WhatsApp de Humberto" 
-        >
-          <i class="fa-brands fa-whatsapp fa-2x whats icones"></i
-        ></a>
-        <a
-          href="mailto:humberto_filho8@hotmail.com? subject=subject text"
-          title="Enviar e-mail para Humberto"
-          alt="Enviar e-mail para Humberto"
-          aria-label="Enviar e-mail para Humberto"
-        >
-          <i class="fa-regular fa-envelope fa-2x email icones"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/humberto-freitasFilho"
-          title="Acessar o LinkedIn de Humberto"
-          alt="Acessar o LinkedIn de Humberto"
-          aria-label="Acessar o LinkedIn de Humberto"
-        >
-          <i class="fa-brands fa-linkedin fa-2x LinkedIn icones"></i
-        ></a>
-        <a
-          href="https://github.com/HumbertoFF"
-          title="Acessar o Github de Humberto"
-          alt="Acessar o Github de Humberto"
-          aria-label="Acessar o LinkedIn de Humberto"
-        >
-          <i class="fa-brands fa-github fa-2x icones"></i
-        ></a>
-        <a
-          href="https://www.facebook.com/humberto.freitas.50"
-          title="Acessar o Facebook de Humberto"
-          alt="Acessar o Facebook de Humberto"
-          aria-label="Acessar o LinkedIn de Humberto"
-        >
-          <i class="fa-brands fa-facebook fa-2x face icones"></i
-        ></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Skills ── -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Tecnologias" data-en="Technologies">Tecnologias</span>
+      <h2 class="section-title" data-pt="Stack Técnica" data-en="Tech Stack">Stack Técnica</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title"><span class="dot"></span> Backend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java 8</span><span class="skill-tag">Java 21</span>
+          <span class="skill-tag">Spring Boot</span><span class="skill-tag">Spring Framework</span>
+          <span class="skill-tag">Java EE</span><span class="skill-tag">JSF</span>
+          <span class="skill-tag">EJB Stateless</span><span class="skill-tag">JPA / Hibernate</span>
+          <span class="skill-tag">APIs REST</span>
+        </div>
       </div>
-    </footer>
-  </body>
-</html>
+      <div class="skill-group reveal">
+        <div class="skill-group-title"><span class="dot"></span> Frontend</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Angular</span><span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Componentes</span><span class="skill-tag">Serviços</span><span class="skill-tag">Roteamento</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title"><span class="dot"></span> <span data-pt="Banco de Dados" data-en="Database">Banco de Dados</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQL</span>
+          <span class="skill-tag" data-pt="Modelagem Relacional" data-en="Relational Modeling">Modelagem Relacional</span>
+          <span class="skill-tag">Query Tuning</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title"><span class="dot"></span> DevOps / Infra</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span><span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">GitLab CI/CD</span><span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Microsserviços</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title"><span class="dot"></span> <span data-pt="Boas Práticas" data-en="Best Practices">Boas Práticas</span></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Git / GitHub / GitLab</span><span class="skill-tag">Maven</span>
+          <span class="skill-tag">Gradle</span><span class="skill-tag">JUnit</span>
+          <span class="skill-tag">Scrum</span><span class="skill-tag">Kanban</span><span class="skill-tag">Clean Code</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Experience ── -->
+<section id="experience">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Trajetória" data-en="Career Path">Trajetória</span>
+      <h2 class="section-title" data-pt="Experiência Profissional" data-en="Professional Experience">Experiência Profissional</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-company">ESIG Software e Consultoria em TI</div>
+            <div class="tl-period" data-pt="Out 2023 – Atual · 2 anos e 7 meses" data-en="Oct 2023 – Present · 2 years 7 months">Out 2023 – Atual · 2 anos e 7 meses</div>
+          </div>
+          <div class="tl-role" data-pt="Analista Desenvolvedor Java · CLT" data-en="Java Developer Analyst · Full-time">Analista Desenvolvedor Java · CLT</div>
+          <div class="tl-location">📍 Natal, RN</div>
+          <ul class="tl-bullets">
+            <li data-pt="Desenvolvimento e sustentação de sistemas corporativos usados por universidades federais, com estimativa de <strong>50 mil a 100 mil usuários ativos por instituição</strong>." data-en="Development and maintenance of corporate systems used by federal universities, estimated at <strong>50,000 to 100,000 active users per institution</strong>.">Desenvolvimento e sustentação de sistemas corporativos usados por universidades federais, com estimativa de <strong>50 mil a 100 mil usuários ativos por instituição</strong>.</li>
+            <li data-pt="Backend robusto com <strong>Java 8 e Java 21</strong>; camada de apresentação via JSF e EJBs Stateless, garantindo separação de responsabilidades." data-en="Robust backend with <strong>Java 8 and Java 21</strong>; presentation layer via JSF and EJBs Stateless, ensuring separation of concerns.">Backend robusto com <strong>Java 8 e Java 21</strong>; camada de apresentação via JSF e EJBs Stateless, garantindo separação de responsabilidades.</li>
+            <li data-pt="Integração e evolução de aplicações com <strong>Spring Framework e Spring Boot</strong>." data-en="Integration and evolution of applications with <strong>Spring Framework and Spring Boot</strong>.">Integração e evolução de aplicações com <strong>Spring Framework e Spring Boot</strong>.</li>
+            <li data-pt="Persistência de dados com <strong>JPA/Hibernate e PostgreSQL</strong>; tuning de queries para alta carga." data-en="Data persistence with <strong>JPA/Hibernate and PostgreSQL</strong>; query tuning for high load.">Persistência de dados com <strong>JPA/Hibernate e PostgreSQL</strong>; tuning de queries para alta carga.</li>
+            <li data-pt="Automação de build com Maven e Gradle; pipelines CI/CD via <strong>Jenkins e Docker</strong>." data-en="Build automation with Maven and Gradle; CI/CD pipelines via <strong>Jenkins and Docker</strong>.">Automação de build com Maven e Gradle; pipelines CI/CD via <strong>Jenkins e Docker</strong>.</li>
+            <li data-pt="Análise e resolução de incidentes críticos em produção, garantindo alta disponibilidade." data-en="Analysis and resolution of critical production incidents, ensuring high availability.">Análise e resolução de incidentes críticos em produção, garantindo alta disponibilidade.</li>
+          </ul>
+          <span class="tl-badge" data-pt="⚡ Cargo atual" data-en="⚡ Current position">⚡ Cargo atual</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="background:var(--accent)"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-company" data-pt="Justiça Federal do Rio Grande do Norte" data-en="Federal Court of Rio Grande do Norte">Justiça Federal do Rio Grande do Norte</div>
+            <div class="tl-period" data-pt="Abr 2022 – Dez 2023 · 1 ano e 8 meses" data-en="Apr 2022 – Dec 2023 · 1 year 8 months">Abr 2022 – Dez 2023 · 1 ano e 8 meses</div>
+          </div>
+          <div class="tl-role" data-pt="Desenvolvedor Full Stack · Residência TI" data-en="Full Stack Developer · IT Residency">Desenvolvedor Full Stack · Residência TI</div>
+          <div class="tl-location">📍 Natal, RN</div>
+          <ul class="tl-bullets">
+            <li data-pt="Desenvolvimento de aplicações web internas com <strong>impacto direto no atendimento ao cidadão</strong>." data-en="Development of internal web applications with <strong>direct impact on citizen services</strong>.">Desenvolvimento de aplicações web internas com <strong>impacto direto no atendimento ao cidadão</strong>.</li>
+            <li data-pt="Frontend com <strong>Angular</strong> e backend com <strong>Spring Boot</strong>." data-en="Frontend with <strong>Angular</strong> and backend with <strong>Spring Boot</strong>.">Frontend com <strong>Angular</strong> e backend com <strong>Spring Boot</strong>.</li>
+            <li data-pt="Arquitetura em <strong>microsserviços</strong> integrada via APIs REST com PostgreSQL." data-en="<strong>Microservices</strong> architecture integrated via REST APIs with PostgreSQL.">Arquitetura em <strong>microsserviços</strong> integrada via APIs REST com PostgreSQL.</li>
+            <li data-pt="Criação e manutenção de pipelines CI/CD no <strong>GitLab</strong> para build, testes e deploy automatizados." data-en="Creation and maintenance of CI/CD pipelines in <strong>GitLab</strong> for automated build, test, and deploy.">Criação e manutenção de pipelines CI/CD no <strong>GitLab</strong> para build, testes e deploy automatizados.</li>
+            <li data-pt="Projeto em produção — <strong><a href='https://acessofacil.jfrn.jus.br/peticao-cadastro' target='_blank' style='color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)'>Acesso Fácil</a></strong>: plataforma web voltada ao atendimento ao cidadão." data-en="Production project — <strong><a href='https://acessofacil.jfrn.jus.br/peticao-cadastro' target='_blank' style='color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)'>Acesso Fácil</a></strong>: a web platform for citizen services (Angular + Spring Boot + PostgreSQL).">Projeto em produção — <strong><a href="https://acessofacil.jfrn.jus.br/peticao-cadastro" target="_blank" style="color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)">Acesso Fácil</a></strong>: plataforma web voltada ao atendimento ao cidadão.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="background:var(--purple)"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-company" data-pt="Freelance – Contrato Oficial de Desenvolvimento" data-en="Freelance – Official Development Contract">Freelance – Contrato Oficial de Desenvolvimento</div>
+            <div class="tl-period" data-pt="Jan 2023 – Mar 2023 · 3 meses" data-en="Jan 2023 – Mar 2023 · 3 months">Jan 2023 – Mar 2023 · 3 meses</div>
+          </div>
+          <div class="tl-role" data-pt="Desenvolvedor Full Stack · Contrato PJ" data-en="Full Stack Developer · Contractor">Desenvolvedor Full Stack · Contrato PJ</div>
+          <div class="tl-location">🌐 <span data-pt="Remoto" data-en="Remote">Remoto</span></div>
+          <ul class="tl-bullets">
+            <li data-pt="Desenvolvimento do <strong>BeCheck</strong>: sistema de saúde pública para gerenciamento de cadastros de pré-natal, contemplando todas as checklists exigidas pelo Ministério da Saúde." data-en="Development of <strong>BeCheck</strong>: a public health system for prenatal record management, covering all checklists required by Brazil's Ministry of Health.">Desenvolvimento do <strong>BeCheck</strong>: sistema de saúde pública para gerenciamento de cadastros de pré-natal, contemplando todas as checklists exigidas pelo Ministério da Saúde.</li>
+            <li data-pt="Stack: <strong>Java no backend</strong> e <strong>Angular no frontend</strong>, com registro como co-autor no <strong>INPI (Processo Nº BR512024000325-8)</strong>." data-en="Stack: <strong>Java backend</strong> and <strong>Angular frontend</strong>, registered as co-author at <strong>INPI (Process No. BR512024000325-8)</strong>.">Stack: <strong>Java no backend</strong> e <strong>Angular no frontend</strong>, com registro como co-autor no <strong>INPI (Processo Nº BR512024000325-8)</strong>.</li>
+            <li data-pt="Ciclo completo: levantamento de requisitos, implementação e entrega dentro do prazo contratual." data-en="Full cycle: requirements gathering, implementation, and delivery within contractual deadlines.">Ciclo completo: levantamento de requisitos, implementação e entrega dentro do prazo contratual.</li>
+          </ul>
+          <span class="tl-badge" style="background:rgba(167,139,250,.1);border-color:rgba(167,139,250,.3);color:var(--purple)" data-pt="🔬 Registro INPI" data-en="🔬 INPI Registration">🔬 Registro INPI</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot" style="background:var(--muted)"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div class="tl-company">Natal Fibra Telecomunicações</div>
+            <div class="tl-period" data-pt="Mar 2021 – Abr 2022 · 1 ano e 1 mês" data-en="Mar 2021 – Apr 2022 · 1 year 1 month">Mar 2021 – Abr 2022 · 1 ano e 1 mês</div>
+          </div>
+          <div class="tl-role" data-pt="Suporte Técnico" data-en="Technical Support">Suporte Técnico</div>
+          <div class="tl-location">📍 Natal, RN</div>
+          <ul class="tl-bullets">
+            <li data-pt="Suporte técnico a clientes, diagnóstico e resolução de problemas de conectividade." data-en="Technical support to clients, diagnosis and resolution of connectivity issues.">Suporte técnico a clientes, diagnóstico e resolução de problemas de conectividade.</li>
+            <li data-pt="Atendimento multicanal: telefone, chat e e-mail." data-en="Multi-channel service: phone, chat, and email.">Atendimento multicanal: telefone, chat e e-mail.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Education ── -->
+<section id="education">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Formação" data-en="Education">Formação</span>
+      <h2 class="section-title" data-pt="Formação Acadêmica" data-en="Academic Background">Formação Acadêmica</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-degree" data-pt="Pós-graduação Lato Sensu em TI" data-en="Postgraduate in IT (Lato Sensu)">Pós-graduação Lato Sensu em TI</div>
+        <div class="edu-degree" style="font-weight:400;font-size:.88rem;color:var(--muted)" data-pt="Residência em Desenvolvimento Web" data-en="Web Development Residency">Residência em Desenvolvimento Web</div>
+        <div class="edu-school">UFRN / IMD</div>
+        <div class="edu-period">Mar 2022 – Out 2023</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-degree" data-pt="Bacharelado em Ciências e Tecnologia" data-en="Bachelor's in Science and Technology">Bacharelado em Ciências e Tecnologia</div>
+        <div class="edu-school" data-pt="Universidade Federal do Rio Grande do Norte (UFRN)" data-en="Federal University of Rio Grande do Norte (UFRN)">Universidade Federal do Rio Grande do Norte (UFRN)</div>
+        <div class="edu-period">2010 – 2015</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Certifications ── -->
+<section id="certifications">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Aprendizado contínuo" data-en="Continuous Learning">Aprendizado contínuo</span>
+      <h2 class="section-title" data-pt="Certificações" data-en="Certifications">Certificações</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="cert-grid reveal">
+      <div class="cert-chip"><span class="cert-dot"></span> Docker para Desenvolvedores (Docker Swarm &amp; Kubernetes) — Udemy</div>
+      <div class="cert-chip"><span class="cert-dot"></span> Imersão Cloud DevOps — Alura</div>
+      <div class="cert-chip"><span class="cert-dot"></span> <span data-pt="Estrutura de Dados em Java" data-en="Data Structures in Java">Estrutura de Dados em Java</span> — DIO</div>
+      <div class="cert-chip"><span class="cert-dot"></span> <span data-pt="POO com Java" data-en="OOP with Java">POO com Java</span> — DIO</div>
+      <div class="cert-chip"><span class="cert-dot"></span> <span data-pt="Testes Unitários com JUnit" data-en="Unit Testing with JUnit">Testes Unitários com JUnit</span> — DIO</div>
+      <div class="cert-chip"><span class="cert-dot"></span> Angular (SPA, <span data-pt="Componentes" data-en="Components">Componentes</span>, Services, <span data-pt="Módulos" data-en="Modules">Módulos</span>) — DIO</div>
+      <div class="cert-chip"><span class="cert-dot"></span> Life Cycle Canvas Associate Certified</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INPI Certificate ── -->
+<section id="inpi">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Propriedade Intelectual" data-en="Intellectual Property">Propriedade Intelectual</span>
+      <h2 class="section-title" data-pt="Certificado INPI" data-en="INPI Certificate">Certificado INPI</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="inpi-wrap">
+      <div class="inpi-info reveal">
+        <div class="inpi-badge-row">
+          <span>📋 BR512024000325-8</span>
+        </div>
+        <div class="inpi-card">
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Título do Software" data-en="Software Title">Título do Software</div>
+            <div class="inpi-value accent">BeCheck</div>
+          </div>
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Órgão Emissor" data-en="Issuing Body">Órgão Emissor</div>
+            <div class="inpi-value" data-pt="Instituto Nacional da Propriedade Industrial — INPI" data-en="Brazilian National Institute of Industrial Property — INPI">Instituto Nacional da Propriedade Industrial — INPI</div>
+          </div>
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Titular" data-en="Holder">Titular</div>
+            <div class="inpi-value" data-pt="Universidade Federal do Rio Grande do Norte" data-en="Federal University of Rio Grande do Norte">Universidade Federal do Rio Grande do Norte</div>
+          </div>
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Papel" data-en="Role">Papel</div>
+            <div class="inpi-value accent" data-pt="Co-autor — Humberto Freitas da Silva Filho" data-en="Co-author — Humberto Freitas da Silva Filho">Co-autor — Humberto Freitas da Silva Filho</div>
+          </div>
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Linguagem" data-en="Language">Linguagem</div>
+            <div class="inpi-value">HTML · Java</div>
+          </div>
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Validade" data-en="Validity">Validade</div>
+            <div class="inpi-value" data-pt="50 anos a partir de 20/11/2023" data-en="50 years from 20/11/2023">50 anos a partir de 20/11/2023</div>
+          </div>
+          <div class="inpi-field">
+            <div class="inpi-label" data-pt="Expedido em" data-en="Issued on">Expedido em</div>
+            <div class="inpi-value">15/02/2024</div>
+          </div>
+        </div>
+      </div>
+      <div class="inpi-img-wrap reveal">
+        <img src="inpi-cert.png" alt="Certificado INPI BeCheck" />
+        <div class="inpi-img-overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Publications ── -->
+<section id="publications">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Pesquisa" data-en="Research">Pesquisa</span>
+      <h2 class="section-title" data-pt="Publicação Científica" data-en="Scientific Publication">Publicação Científica</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="pub-card reveal">
+      <div class="pub-title" data-pt="BECHECK: DESENVOLVIMENTO DE TECNOLOGIA PARA APOIAR ASSISTÊNCIA EM PERINATOLOGIA" data-en="BECHECK: TECHNOLOGY DEVELOPMENT TO SUPPORT ASSISTANCE IN PERINATOLOGY">
+        BECHECK: DESENVOLVIMENTO DE TECNOLOGIA PARA APOIAR ASSISTÊNCIA EM PERINATOLOGIA
+      </div>
+      <div class="pub-authors">
+        Vale, A. J.; Lima Neto, J. G.; Lacerda, J. M. G. M.;
+        <strong style="color:var(--text)">Freitas da Silva Filho, H.</strong>;
+        Liborio, M. R.; Rodrigues, A. G. C. D. R.; Cobucci, R. N.
+      </div>
+      <div class="pub-journal">
+        <strong data-pt="Revista Interfaces: Saúde, Humanas e Tecnologia" data-en="Interfaces Journal: Health, Humanities and Technology">Revista Interfaces: Saúde, Humanas e Tecnologia</strong>
+        · v. 12, n. 3, pp. 4231–4242 · <span data-pt="Set. 2024" data-en="Sep. 2024">Set. 2024</span> · ISSN: 2317-434X
+      </div>
+      <div style="font-size:.83rem;color:var(--muted)">
+        DOI: <a href="https://doi.org/10.16891/2317-434X.v12.e3.a2024.pp4231-4242" style="color:var(--primary)" target="_blank">10.16891/2317-434X.v12.e3.a2024.pp4231-4242</a>
+        &nbsp;·&nbsp; <span data-pt="Registro INPI" data-en="INPI Registration">Registro INPI</span>: BR512024000325-8
+      </div>
+      <div class="pub-tags">
+        <span class="pub-tag" data-pt="Saúde Pública" data-en="Public Health">Saúde Pública</span>
+        <span class="pub-tag">Perinatologia</span>
+        <span class="pub-tag" data-pt="Tecnologia em Saúde" data-en="Health Technology">Tecnologia em Saúde</span>
+        <span class="pub-tag">Java</span>
+        <span class="pub-tag">Angular</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Built With ── -->
+<section id="built-with">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Este site" data-en="This site">Este site</span>
+      <h2 class="section-title" data-pt="Como este portfólio foi construído" data-en="How this portfolio was built">Como este portfólio foi construído</h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="built-intro reveal"
+       data-pt="Este portfólio é um arquivo <strong>HTML puro</strong> — sem frameworks, sem dependências externas. Todas as animações, partículas e interações foram construídas com <strong>CSS3 e JavaScript vanilla</strong>. O deploy é automatizado via <strong>GitHub Actions</strong>, publicando direto no GitHub Pages a cada commit na branch main."
+       data-en="This portfolio is a <strong>pure HTML</strong> file — no frameworks, no external dependencies. All animations, particles, and interactions were built with <strong>CSS3 and vanilla JavaScript</strong>. Deployment is automated via <strong>GitHub Actions</strong>, publishing directly to GitHub Pages on every commit to the main branch.">
+      Este portfólio é um arquivo <strong>HTML puro</strong> — sem frameworks, sem dependências externas. Todas as animações, partículas e interações foram construídas com <strong>CSS3 e JavaScript vanilla</strong>. O deploy é automatizado via <strong>GitHub Actions</strong>, publicando direto no GitHub Pages a cada commit na branch main.
+    </p>
+    <div class="built-grid">
+      <div class="built-card reveal">
+        <div class="built-icon">🏗️</div>
+        <div class="built-name">HTML5 + CSS3</div>
+        <div class="built-desc" data-pt="Estrutura semântica e estilização completa com variáveis CSS, glassmorphism, gradientes e animações keyframe — zero dependências." data-en="Semantic structure and full styling with CSS variables, glassmorphism, gradients and keyframe animations — zero dependencies.">Estrutura semântica e estilização completa com variáveis CSS, glassmorphism, gradientes e animações keyframe — zero dependências.</div>
+      </div>
+      <div class="built-card reveal">
+        <div class="built-icon">⚡</div>
+        <div class="built-name">JavaScript Vanilla</div>
+        <div class="built-desc" data-pt="Canvas 2D para as partículas animadas, IntersectionObserver para scroll reveal, toggle de idioma PT/EN e animação de contadores — tudo sem bibliotecas externas." data-en="Canvas 2D for animated particles, IntersectionObserver for scroll reveal, PT/EN language toggle and counter animations — all without external libraries.">Canvas 2D para as partículas animadas, IntersectionObserver para scroll reveal, toggle de idioma PT/EN e animação de contadores — tudo sem bibliotecas externas.</div>
+      </div>
+      <div class="built-card reveal">
+        <div class="built-icon">🐙</div>
+        <div class="built-name">GitHub Actions</div>
+        <div class="built-desc" data-pt="Pipeline de CI/CD que detecta push na branch main e faz deploy automático no GitHub Pages. Nenhuma etapa manual de publicação necessária." data-en="CI/CD pipeline that detects pushes to the main branch and automatically deploys to GitHub Pages. No manual publishing step required.">Pipeline de CI/CD que detecta push na branch main e faz deploy automático no GitHub Pages. Nenhuma etapa manual de publicação necessária.</div>
+      </div>
+      <div class="built-card reveal">
+        <div class="built-icon">🌐</div>
+        <div class="built-name">GitHub Pages</div>
+        <div class="built-desc" data-pt="Hospedagem gratuita e com CDN global. O site é servido via HTTPS diretamente do repositório, com disponibilidade de 99,9%." data-en="Free hosting with global CDN. The site is served via HTTPS directly from the repository, with 99.9% availability.">Hospedagem gratuita e com CDN global. O site é servido via HTTPS diretamente do repositório, com disponibilidade de 99,9%.</div>
+      </div>
+      <div class="built-card reveal">
+        <div class="built-icon">🌍</div>
+        <div class="built-name" data-pt="Bilíngue PT / EN" data-en="Bilingual PT / EN">Bilíngue PT / EN</div>
+        <div class="built-desc" data-pt="Troca de idioma em tempo real via atributos data-pt / data-en no DOM. Nenhuma requisição ao servidor — instantâneo." data-en="Real-time language switching via data-pt / data-en attributes in the DOM. No server requests — instantaneous.">Troca de idioma em tempo real via atributos data-pt / data-en no DOM. Nenhuma requisição ao servidor — instantâneo.</div>
+      </div>
+      <div class="built-card reveal">
+        <div class="built-icon">📱</div>
+        <div class="built-name">Responsivo</div>
+        <div class="built-desc" data-pt="Layout adaptável a qualquer tamanho de tela com CSS Grid e Flexbox. Funciona perfeitamente em mobile, tablet e desktop." data-en="Layout adapts to any screen size with CSS Grid and Flexbox. Works perfectly on mobile, tablet, and desktop.">Layout adaptável a qualquer tamanho de tela com CSS Grid e Flexbox. Funciona perfeitamente em mobile, tablet e desktop.</div>
+      </div>
+    </div>
+
+    <!-- CI/CD Pipeline visual -->
+    <div class="pipeline-wrap reveal">
+      <div class="pipeline-title" data-pt="🚀 Pipeline GitHub Actions" data-en="🚀 GitHub Actions Pipeline">🚀 Pipeline GitHub Actions</div>
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-emoji">💻</div>
+          <div class="pipe-label" data-pt="Código" data-en="Code">Código</div>
+          <div class="pipe-sub" data-pt="Edição local" data-en="Local edit">Edição local</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-emoji">📤</div>
+          <div class="pipe-label">git push</div>
+          <div class="pipe-sub">main branch</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-emoji">⚙️</div>
+          <div class="pipe-label">Actions</div>
+          <div class="pipe-sub" data-pt="Trigger automático" data-en="Auto trigger">Trigger automático</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-emoji">🔨</div>
+          <div class="pipe-label">Build</div>
+          <div class="pipe-sub" data-pt="Validação" data-en="Validation">Validação</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-emoji">🚀</div>
+          <div class="pipe-label">Deploy</div>
+          <div class="pipe-sub">GitHub Pages</div>
+        </div>
+        <div class="pipe-step">
+          <div class="pipe-emoji">✅</div>
+          <div class="pipe-label" data-pt="Online" data-en="Live">Online</div>
+          <div class="pipe-sub">HTTPS · CDN</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Languages ── -->
+<section id="languages">
+  <div class="section-wrap">
+    <div class="section-head reveal">
+      <span class="section-tag" data-pt="Comunicação" data-en="Communication">Comunicação</span>
+      <h2 class="section-title" data-pt="Idiomas" data-en="Languages">Idiomas</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="lang-grid">
+      <div class="lang-card reveal">
+        <div class="lang-name">🇧🇷 Português</div>
+        <div class="lang-level" data-pt="Nativo" data-en="Native">Nativo</div>
+        <div class="lang-desc" data-pt="Fluência total em todas as formas de comunicação." data-en="Full fluency in all forms of communication.">Fluência total em todas as formas de comunicação.</div>
+        <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+      </div>
+      <div class="lang-card reveal">
+        <div class="lang-name">🇺🇸 Inglês</div>
+        <div class="lang-level" data-pt="Técnico Intermediário" data-en="Intermediate Technical">Técnico Intermediário</div>
+        <div class="lang-desc" data-pt="Leitura, escrita e documentação técnica. Conversação em desenvolvimento — atualmente em curso presencial particular." data-en="Reading, writing, and technical documentation. Conversational English in development — currently attending private in-person classes.">Leitura, escrita e documentação técnica. Conversação em desenvolvimento — atualmente em curso presencial particular.</div>
+        <div class="lang-bar"><div class="lang-fill" style="width:60%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="footer-name">Humberto Freitas</div>
+  <p style="color:var(--muted);font-size:.83rem;margin-top:.4rem">
+    Full Stack Developer · Java · Spring Boot · Angular
+  </p>
+  <div class="footer-links">
+    <a href="mailto:humbertofilho8@gmail.com">✉ humbertofilho8@gmail.com</a>
+    <a href="tel:+5584991672742">📱 (84) 99167-2742</a>
+    <a href="https://www.linkedin.com/in/humberto-freitasfilho/" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/HumbertoFF" target="_blank">💻 GitHub</a>
+    <a href="https://humbertoff.github.io/PortfolioGit/" target="_blank">🌐 <span data-pt="Portfólio" data-en="Portfolio">Portfólio</span></a>
+  </div>
+  <p class="footer-copy">© 2026 Humberto Freitas. <span data-pt="Todos os direitos reservados." data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+</footer>
+
+<script>
+/* ── Language Toggle ─────────────────────────────── */
+function setLang(lang) {
+  document.documentElement.setAttribute('data-lang', lang);
+  document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+  document.querySelectorAll('[data-pt]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (!val) return;
+    if (el.tagName === 'A' || el.tagName === 'SPAN' || el.tagName === 'BUTTON') {
+      el.textContent = val;
+    } else {
+      el.innerHTML = val;
+    }
+  });
+}
+
+/* ── Particle Canvas ─────────────────────────────── */
+(function() {
+  const canvas = document.getElementById('bg-canvas');
+  const ctx = canvas.getContext('2d');
+  let W, H, particles;
+  function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
+  function init() {
+    resize();
+    particles = Array.from({length:70}, () => ({
+      x: Math.random()*W, y: Math.random()*H,
+      r: Math.random()*1.5+0.3,
+      dx: (Math.random()-.5)*.3, dy: (Math.random()-.5)*.3,
+      alpha: Math.random()*.5+.1
+    }));
+  }
+  function draw() {
+    ctx.clearRect(0,0,W,H);
+    for (let i=0;i<particles.length;i++) {
+      for (let j=i+1;j<particles.length;j++) {
+        const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        if (dist<130) {
+          ctx.beginPath();
+          ctx.strokeStyle=`rgba(79,142,247,${.08*(1-dist/130)})`;
+          ctx.lineWidth=.5;
+          ctx.moveTo(particles[i].x,particles[i].y);
+          ctx.lineTo(particles[j].x,particles[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+    particles.forEach(p => {
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(79,142,247,${p.alpha})`; ctx.fill();
+      p.x+=p.dx; p.y+=p.dy;
+      if(p.x<0||p.x>W) p.dx*=-1;
+      if(p.y<0||p.y>H) p.dy*=-1;
+    });
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', resize);
+  init(); draw();
+})();
+
+/* ── Scroll Reveal ───────────────────────────────── */
+(function() {
+  document.documentElement.classList.add('js-ready');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach((e,i) => {
+      if(e.isIntersecting) { setTimeout(()=>e.target.classList.add('visible'),i*80); io.unobserve(e.target); }
+    });
+  }, {threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+})();
+
+/* ── Nav highlight ───────────────────────────────── */
+(function() {
+  const sections = document.querySelecto
